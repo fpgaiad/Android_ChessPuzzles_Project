@@ -10,12 +10,12 @@ public class Puzzle01 implements Puzzle {
 
     @Override
     public String getSource() {
-        return "Illustrated London News";
+        return "fonte: Illustrated London News";
     }
 
     @Override
     public String getMaxMoves() {
-        return "Mate in Two Moves";
+        return "mate em dois lances";
     }
 
     @Override
