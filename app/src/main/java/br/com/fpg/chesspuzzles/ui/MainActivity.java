@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import br.com.fpg.chesspuzzles.R;
+import br.com.fpg.chesspuzzles.entities.Puzzle;
+import br.com.fpg.chesspuzzles.entities.Puzzle04;
+import br.com.fpg.chesspuzzles.repository.PuzzleRepository;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        fragmentTransaction.add(R.id.root_layout, new PuzzleFragment());
+        Puzzle puzzle04 = PuzzleRepository.getPuzzle04();
+
+        fragmentTransaction.add(R.id.root_layout, PuzzleFragment.newInstance(puzzle04));
         fragmentTransaction.commit();
     }
 }
