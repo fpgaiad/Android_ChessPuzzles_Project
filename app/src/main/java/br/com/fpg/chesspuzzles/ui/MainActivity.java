@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import br.com.fpg.chesspuzzles.R;
 import br.com.fpg.chesspuzzles.entities.Puzzle;
-import br.com.fpg.chesspuzzles.entities.Puzzle04;
 import br.com.fpg.chesspuzzles.repository.PuzzleRepository;
 
 public class MainActivity extends AppCompatActivity {

@@ -9,15 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.io.Serializable;
-
 import br.com.fpg.chesspuzzles.R;
 import br.com.fpg.chesspuzzles.entities.Puzzle;
-import br.com.fpg.chesspuzzles.entities.Puzzle01;
-import br.com.fpg.chesspuzzles.entities.Puzzle02;
-import br.com.fpg.chesspuzzles.entities.Puzzle04;
-import br.com.fpg.chesspuzzles.repository.PuzzleRepository;
+
 
 
 public class PuzzleFragment extends Fragment {
