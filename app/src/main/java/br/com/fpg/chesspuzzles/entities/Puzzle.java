@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 public interface Puzzle extends Serializable {
 
+    String getPuzzleNumber();
+
     String getSource();
 
     String getMaxMoves();

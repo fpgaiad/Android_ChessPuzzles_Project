@@ -4,5 +4,49 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#343434"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context="br.com.fpg.chesspuzzles.ui.MainActivity" />
+    tools:context="br.com.fpg.chesspuzzles.ui.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Chess Problems"
+        android:textColor="#ffffff"
+        android:textSize="56sp" />
+
+    <TextView
+        android:paddingTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="selected from the compositions of"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Mrs. W. J. BAIRD"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="[1902]"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

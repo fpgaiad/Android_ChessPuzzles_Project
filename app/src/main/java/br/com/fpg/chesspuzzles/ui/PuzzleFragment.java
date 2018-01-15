@@ -17,14 +17,13 @@ import br.com.fpg.chesspuzzles.entities.Puzzle;
 public class PuzzleFragment extends Fragment {
 
 
-    private static Puzzle puzzle;
+    private Puzzle puzzle;
 
     public PuzzleFragment() {
         // Required empty public constructor
     }
 
     public static PuzzleFragment newInstance(Puzzle puzzle) {
-        PuzzleFragment.puzzle = puzzle;
         PuzzleFragment puzzleFragment = new PuzzleFragment();
         Bundle args = new Bundle();
         args.putSerializable("puzzleKey", puzzle);
@@ -48,11 +47,15 @@ public class PuzzleFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        TextView txtPuzzleNumber = view.findViewById(R.id.txt_puzzle_number);
         ImageView imgChessTable = view.findViewById(R.id.img_chess_table);
         TextView txtMaxMoves = view.findViewById(R.id.txt_max_moves);
         TextView txtPuzzleSource = view.findViewById(R.id.txt_puzzle_source);
 
         if (puzzle != null) {
+            txtPuzzleNumber.setText(puzzle.getPuzzleNumber());
             imgChessTable.setImageResource(puzzle.getImageResourceId());
             txtMaxMoves.setText(puzzle.getMaxMoves());
             txtPuzzleSource.setText(puzzle.getSource());

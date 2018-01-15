@@ -9,6 +9,11 @@ import br.com.fpg.chesspuzzles.R;
 public class Puzzle03 implements Puzzle {
 
     @Override
+    public String getPuzzleNumber() {
+        return "3.";
+    }
+
+    @Override
     public String getSource() {
         return "fonte: British Chess Magazine";
     }

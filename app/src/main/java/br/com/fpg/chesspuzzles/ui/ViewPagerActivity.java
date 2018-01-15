@@ -31,6 +31,7 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         public PagerAdapter(FragmentManager fm, List<Puzzle> puzzleList) {
             super(fm);
+
             this.puzzleList = puzzleList;
         }
 
